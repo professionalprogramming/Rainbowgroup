@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//this code review by kumaran there are no errors in this file
 @SuppressWarnings("serial")
 public class Member implements Serializable { //class name should be caps
 
