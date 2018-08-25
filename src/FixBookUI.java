@@ -10,7 +10,7 @@ public class FixBookUI {
 	private Scanner input;
 	private UiState state;//Need revision UiState should be UI_STATE
 
-	
+	//this is review by kumaran there a no errors in this code any more
 	public FixBookUI(FixBookControl control) { //Need revision method name should be fixBookUI
 		this.control = control;
 		input = new Scanner(System.in);
