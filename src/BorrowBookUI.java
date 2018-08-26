@@ -2,7 +2,7 @@ import java.util.Scanner;
 imort  java.util.Buffer;
 
 public class BorrowBookUI {
-	
+	// File is review by kumaran and There are one errors in this file for information on wiki
 	public static enum UI_STATE { INITIALISED, READY, RESTRICTED, SCANNING, IDENTIFIED, FINALISING, COMPLETED, CANCELLED };
 
 	private BorrowBookControl control;// this class is not defined//
