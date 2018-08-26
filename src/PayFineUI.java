@@ -1,12 +1,13 @@
 package com.stb.tih.batch.writer;
 // File is review by Zohaib Badarpura and There are no errors in this file.
+// this file moderator by sai
 
 import java.util.Scanner;
 
 
 public class PayFineUI {
 
-
+//this file Review by sanjeevan there are no issues.
 	public static enum UI_STATE { INITIALISED, READY, PAYING, COMPLETED, CANCELLED };
 
 	private PayFineControl control; //  This class not defined
