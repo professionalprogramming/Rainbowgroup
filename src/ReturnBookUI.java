@@ -6,8 +6,8 @@ public class ReturnBookUI {
 
 
 
-//this code review by kumaran there are no errors in this file
 
+//this code review by kumaran there are no errors in this file
 
 	public static enum UiState  (INITIALISED, READY, INSPECTING, COMPLETED) ; //Reaname UT_STAE to UiState and change the { to (
 
@@ -18,12 +18,6 @@ public class ReturnBookUI {
 
 	public static enum UiState { INITIALISED, READY, INSPECTING, COMPLETED };//UI_STATE renamed to UiState
 
-	private ReturnBookControl control;
-	private Scanner input;
-	
-	private UI_STATE state; // UI_STATE renamed to UiState 
-
-
 	
 	public ReturnBookUI(ReturnBookControl control)
 	{ 							// Change the place {
@@ -31,18 +25,6 @@ public class ReturnBookUI {
 
 		input = new Scanner(System.in);
 		state = UiState.INITIALISED;
-
-
-		Scanner scanner = new Scanner( System.in ); // Change the scanner input..
-		
-		
-		state = UI_STATE.INITIALISED;                
-		Scanner input = new Scanner(System.in); //change the input to Scanner input
-		
-
-		//need review - UiState to UI_State
-		state = UiState.INITIALISED; //UI_STATE renamed to UiState
-
 		control.setUI(this);
 	}
  
@@ -137,16 +119,8 @@ public class ReturnBookUI {
 	}
 	
 
-	public void setState(UiState state) {
-
-
-		
 	public void setState(UI_STATE state) 
 
-		
-	public void setState(UI_STATE state)  
-
-	{
 		this.state = state;
 	}
 //Moderator	Zohaib
