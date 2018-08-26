@@ -81,7 +81,7 @@ public class FixBookUI {
 
 	
 	private String input(String prompt) {
-		System.out.print(prompt);
+		System.out.println(prompt);//change to println
 		return input.nextLine();
 	}	
 		
