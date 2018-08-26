@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Moderator of this file is Zohaib Badarpura
 
 
 public class ReturnBookUI {
@@ -42,6 +43,9 @@ public class ReturnBookUI {
 		state = UiState.INITIALISED;                // Reaname UT_STAE to UiState
 		Scanner input = new Scanner(System.in); //change the input to Scanner input
 		
+
+		state = UiState.INITIALISED; 
+
 		//need review - UiState to UI_State
 		state = UiState.INITIALISED; //UI_STATE renamed to UiState
  

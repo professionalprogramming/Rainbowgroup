@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// Moderator of this file is Zohaib Badarpura
 
 public class FixBookUI {
 
@@ -80,7 +81,7 @@ public class FixBookUI {
 
 	
 	private String input(String prompt) {
-		System.out.print(prompt);
+		System.out.println(prompt);//change to println
 		return input.nextLine();
 	}	
 		
