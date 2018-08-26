@@ -1,5 +1,6 @@
 public class FixBookControl {
 	//this code review by kumaran there are no errors in this file
+	//File is moderator by KUMARAN and no conflicts found
 	private FixBookUI ui;
 	private Enum CONTROL_STATE { INITIALISED, READY, FIXING }; //enum to Enum by Author 
 	private CONTROL_STATE state;
