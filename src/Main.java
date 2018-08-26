@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
-
+//This file doesn't have any conflicts Moderator by sanjeevan
 public class Main {
 	
 	private static Scanner IN;
