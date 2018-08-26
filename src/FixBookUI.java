@@ -1,31 +1,45 @@
 import java.util.Scanner;
 
+// Moderator of this file is Zohaib Badarpura
 
 public class FixBookUI {
 
-	//Need revision UiState should be UI_STATE
-	public static enum UiState { INITIALISED, READY, FIXING, COMPLETED };// Reaname enum UI_STATE to UiState.
+
+	public static enum UI_STATE { INITIALISED, READY, FIXING, COMPLETED };
+
+	
+	public static enum UiState { INITIALISED, READY, FIXING, COMPLETED };
+
 
 	private FixBookControl control;
 	private Scanner input;
-	private UiState state;//Need revision UiState should be UI_STATE
+	private UI_STATE state;
+
 
 	//this is review by kumaran there a no errors in this code any more
 	public FixBookUI(FixBookControl control) { //Need revision method name should be fixBookUI
+	
+	public FixBookUI(FixBookControl control) { 
+    
 		this.control = control;
 		input = new Scanner(System.in);
-		state = UiState.INITIALISED;//Need revision UiState should be UI_STATE
+
+		state = UI_STATE.INITIALISED;
+		control.UI_STATE(this);
+
+		state = UI_STATE.INITIALISED;
 		control.setUI(this);
+
 	}
 
 
-	public void setState(UiState state) {
+	public void setState(UI_STATE state) {
 		this.state = state;
 	}
 
 	
 	public void run() {
-		System.out.println("Fix Book Use Case UI\n"); //Change the Output to System.out.println
+		System.out.println("Fix Book Use Case UI\n"); 
 		
 		while (true) {
 			
@@ -71,7 +85,7 @@ public class FixBookUI {
 
 	
 	private String input(String prompt) {
-		System.out.print(prompt);
+		System.out.println(prompt);//change to println
 		return input.nextLine();
 	}	
 		

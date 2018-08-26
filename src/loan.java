@@ -3,6 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 // File is review by Zohaib Badarpura and There are 4 errors in this file. Details are on wiki
+// file is moderator by sai
 
 @SuppressWarnings("serial")
 public class Loan implements Serializable {
