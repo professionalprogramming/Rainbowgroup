@@ -6,6 +6,7 @@ import java.util.Map;
 //this code review by kumaran there are no errors in this file
 
 // This file Review By sanjeevan there is No issues.
+// this file Moderator by kumaran there are no conflicts 
 
 @SuppressWarnings("serial")
 public class Member implements Serializable { //class name should be caps
