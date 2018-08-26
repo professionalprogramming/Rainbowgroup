@@ -1,6 +1,9 @@
 import java.util.Scanner;
 //This file author sanjeevan
 
+
+// Moderator of this file is Zohaib Badarpura
+
 public class FixBookUI {
 
 
@@ -14,8 +17,12 @@ public class FixBookUI {
 	private Scanner input;
 	private UI_STATE state;
 
+
+	//this is review by kumaran there a no errors in this code any more
+	public FixBookUI(FixBookControl control) { //Need revision method name should be fixBookUI
 	
 	public FixBookUI(FixBookControl control) { 
+    
 		this.control = control;
 		input = new Scanner(System.in);
 
