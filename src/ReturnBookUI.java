@@ -4,28 +4,14 @@ import java.util.Scanner;
 
 public class ReturnBookUI {
 
-	//Remove duplication of code
+	
 
-	public static enum UiState { INITIALISED, READY, INSPECTING, COMPLETED };
-
-	private ReturnBookControl control;
-	private Scanner input;
-	//Need revision -  UiState to UI_STATE
-	private UiState state; // UI_STATE renamed to UiState 
-
-
-	public static enum UiState  (INITIALISED, READY, INSPECTING, COMPLETED) ; //Reaname UT_STAE to UiState and change the { to (
-
-	private ReturnBookControl control;
-	private static Scanner scanner = new Scanner( System.in ); // change the scanner input.
-	private UiState state; // Reaname UT_STAE to UiState
-
-	public static enum UiState { INITIALISED, READY, INSPECTING, COMPLETED };//UI_STATE renamed to UiState
+	public static enum UI_STATE { INITIALISED, READY, INSPECTING, COMPLETED };
 
 	private ReturnBookControl control;
 	private Scanner input;
-	private UiState state; //UI_STATE renamed to UiState
-
+	
+	private UI_STATE state; // UI_STATE renamed to UiState 
 
 
 	
@@ -39,13 +25,12 @@ public class ReturnBookUI {
 
 		Scanner scanner = new Scanner( System.in ); // Change the scanner input..
 		
-		//need review - UiState to UI_State
-		state = UiState.INITIALISED;                // Reaname UT_STAE to UiState
+		
+		state = UI_STATE.INITIALISED;                
 		Scanner input = new Scanner(System.in); //change the input to Scanner input
 		
-		//need review - UiState to UI_State
-		state = UiState.INITIALISED; //UI_STATE renamed to UiState
- 
+		
+		state = UI_STATE.INITIALISED; 
 
 		control.setUI(this);
 	}
@@ -144,11 +129,11 @@ public class ReturnBookUI {
 	public void setState(UiState state) {
 
 
-		//need review - UiState to UI_State
-	public void setState(UiState state) // Reaname UT_STAE to UiState
+		
+	public void setState(UI_STATE state) 
 
-		//need review - UiState to UI_State
-	public void setState(UiState state) //UI_STATE renamed to UiState 
+		
+	public void setState(UI_STATE state)  
 
 	{
 		this.state = state;
